@@ -1,0 +1,154 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    --main_color: #242424;
+    --active_color: #F92C47;
+}
+
+a {
+    cursor: pointer;
+}
+
+.button {
+    color: white;
+    background-color: var(--main_color);
+    padding: 15px 30px;
+    border: 3px solid --main_color;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s all ease-in-out;
+}
+
+.button:hover {
+    color: var(--main_color);
+    background-color: white;
+}
+
+/* header */
+
+.header__bottom {
+    background-color: var(--active_color);
+    max-height: 100vh;
+}
+
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo-img {
+    max-height: 61px;
+}
+
+.nav__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__item+.nav__item {
+    padding-left: 30px;
+}
+
+/* botom iner */
+.header__logo-img {
+    max-width: 591px;
+    margin-bottom: 55px;
+}
+
+.header__bottom-inner {
+    padding: 210px 0 213px 0;
+    position: relative;
+}
+
+.header__img {
+    max-width: 841px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.header__bottom-h1 {
+    max-width: 592px;
+    font-size: 2.5rem;
+    line-height: 115%;
+    margin-bottom: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* what is */
+.what__wrapper-top{
+    display: block;
+    background-color: var(--main_color);
+    min-height: 205px;
+}
+
+.what__wraper-content {
+    padding-bottom: 85px;
+}
+
+.what__top-h {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 4.5rem;
+    color: white;
+    padding-top: 65px;
+}
+
+.what__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+.what__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.what__text{
+    max-width: 500px;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+
+.what__we-ico{
+    width: 105px;
+    height: 105px;
+    padding-top: 110px;
+    margin-bottom: 65px;
+}
+
+.what__mis-ico {
+    width: 129px;
+    height: 105px;
+    
+    
+}
+
+.what__text {
+    padding: 1rem;
+}
+
+.what__line {
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    height: 180px;
+    background-color: var(--active_color);
+    bottom: 15px;
+}
