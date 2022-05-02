@@ -2,9 +2,10 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 400;
+    line-height: 30px;
     --main_color: #242424;
     --active_color: #F92C47;
-    --bg_color:#F2F2F2;
+    --bg_color: #F2F2F2;
     color: var(--main_color);
 }
 
@@ -13,6 +14,7 @@ a {
 }
 
 .button {
+    display: inline-block;
     color: white;
     background-color: var(--main_color);
     padding: 15px 30px;
@@ -21,7 +23,7 @@ a {
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
-    transition: 0.5s all ease-in-out;
+    transition: 0.3s all ease-in;
 }
 
 .button:hover {
@@ -62,11 +64,24 @@ a {
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 2.25rem;
+
 }
 
-.nav__item + .nav__item {
+.nav__item+.nav__item {
     padding-left: 30px;
 }
+
+.nav__item-link {
+    padding-bottom: 3px;
+    border-bottom: 4px solid transparent;
+    transition: all 0.2s ease-in;
+}
+
+.nav__item-link:hover {
+    color: var(--active_color);
+    border-bottom: 4px solid var(--active_color);
+}
+
 
 /* botom iner */
 .header__logo-img {
@@ -97,7 +112,7 @@ a {
 }
 
 /* what is */
-.what__wrapper-top{
+.what__wrapper-top {
     display: block;
     background-color: var(--main_color);
     min-height: 205px;
@@ -122,20 +137,20 @@ a {
     position: relative;
 }
 
-.what__item{
+.what__item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
-.what__text{
+.what__text {
     max-width: 500px;
     font-weight: 400;
     line-height: 1.875rem;
 }
 
-.what__we-ico{
+.what__we-ico {
     width: 105px;
     height: 105px;
     padding-top: 110px;
@@ -145,8 +160,8 @@ a {
 .what__mis-ico {
     width: 129px;
     height: 105px;
-    
-    
+
+
 }
 
 .what__text {
@@ -164,7 +179,7 @@ a {
 
 /* Produrct */
 
-.product{
+.product {
     background-color: var(--bg_color);
 }
 
@@ -180,12 +195,12 @@ a {
     font-weight: 700;
     font-size: 3rem;
     line-height: 4rem;
-    padding: 105px 0 60px 0 ;
+    padding: 105px 0 60px 0;
 }
 
 
 .product__cards {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -199,7 +214,7 @@ a {
     height: 315px;
     padding: 11px;
     background-color: white;
-    box-shadow:4px 4px 10px rgba(82, 80, 80, 0.15);
+    box-shadow: 4px 4px 10px rgba(82, 80, 80, 0.15);
     border-radius: 10px;
 }
 
@@ -212,14 +227,14 @@ a {
 }
 
 
-.product__card-img{
+.product__card-img {
     width: 100px;
     height: 100px;
     margin-bottom: 30px;
     margin-top: 30px;
 }
 
-.product__card-text{
+.product__card-text {
     width: 270px;
     font-weight: 400;
     line-height: 1.875rem;
@@ -234,7 +249,7 @@ a {
     margin-bottom: 40px;
 }
 
-.product__btn-block  {
+.product__btn-block {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -282,3 +297,203 @@ a {
 }
 
 /* pricing */
+
+.pricing__block {
+    padding: 60px 0;
+}
+
+.pricing__h {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 30px;
+}
+
+
+.pricing__text {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.25rem;
+    margin-bottom: 30px;
+}
+
+
+.pricing__text-left {
+    display: block;
+}
+
+.pricing__text-h {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    padding-left: 140px;
+    margin-bottom: 30px;
+
+}
+
+.pricing__text-h span {
+    color: var(--active_color);
+    margin-left: 15px;
+}
+
+.pricing__text-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 50px;
+
+}
+
+.pricing__items {
+    margin-right: 250px;
+    margin-left: 165px;
+
+}
+
+.pricing__item {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.25rem;
+    position: relative;
+    padding-left: 35px;
+
+
+}
+
+.pricing__item::before {
+    content: '';
+    background-image: url(../img/ico/star.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 5px;
+    left:0px;
+    height: 20px;
+    width: 20px;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+.pricing__subtext {
+    max-width: 350px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2.25rem;
+    margin-bottom: 20px;
+}
+
+.pricing__text-right {
+    font-weight: 400;
+    max-width: 350px;
+}
+
+.pricing__botom-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.pricing__price {
+    display: inline-block;
+    padding-top: 10px;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    border-top: 6px solid var(--active_color);
+    margin-right: 190px;
+    margin-left: 330px;   
+}
+
+/* partner */
+.partner__block {
+    padding:120px 0;
+    background-color: var(--bg_color);
+}
+
+.partner__text-h {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+    margin-bottom: 30px;
+}
+
+.partner__text {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin-bottom: 20px;
+}
+
+
+.partner__text +.partner__text{
+    margin-bottom: 60px;
+}
+
+/* footer */
+.footer__block {
+    background-color: var(--main_color);
+    padding: 60px 0;
+
+}
+
+.footer__text {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+    color: white;
+    margin-bottom: 40px;
+}
+
+
+.footer__block-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer__logo {
+    margin-bottom: 55px;
+}
+
+.footer__text-data {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.25rem;
+    color: white;
+}
+
+.footer__item-text {
+    font-size: inherit;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.footer_item-site {
+    color: var(--active_color);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.25rem;
+    opacity: 100%;
+    transition: all .2s ease-in-out;
+    margin-bottom: 18px;
+}
+
+.footer_item-site:hover {
+    opacity: 80%;
+}
